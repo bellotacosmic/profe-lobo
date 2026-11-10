@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roble | Carpintería</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/datos.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="encabezado">
+    <a class="marca" href="#inicio">ROBLE <span>CARPINTERÍA</span></a>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#favoritos">Favoritos <b id="contador-favoritos">0</b></a>
+      <a href="#carrito">Carrito <b id="contador-carrito">0</b></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <p>DISEÑO · MADERA · OFICIO</p>
+      <h1>La calidez de la madera,<br><em>hecha para tu hogar.</em></h1>
+      <p class="bajada">Muebles funcionales y duraderos, trabajados con dedicación.</p>
+      <a class="boton-claro" href="#catalogo">EXPLORAR CATÁLOGO →</a>
+    </section>
+
+    <section class="seccion" id="catalogo">
+      <p class="etiqueta">NUESTRA SELECCIÓN</p>
+      <h2>Muebles destacados</h2>
+      <div id="catalogo-productos" class="grilla-productos"></div>
+    </section>
+
+    <section class="seccion favoritos" id="favoritos">
+      <p class="etiqueta">TUS ELEGIDOS</p>
+      <h2>Mis favoritos ♥</h2>
+      <div id="lista-favoritos" class="grilla-productos"></div>
+      <p id="favoritos-vacio" class="vacio">Todavía no agregaste productos a favoritos.</p>
+    </section>
+
+    <section class="seccion" id="carrito">
+      <p class="etiqueta">TU SELECCIÓN</p>
+      <h2>Carrito de compras</h2>
+      <div class="panel-carrito">
+        <div id="items-carrito"></div>
+        <p id="carrito-vacio" class="vacio">Tu carrito está vacío. ¡Descubrí nuestros muebles!</p>
+        <div class="total">
+          <span>Total de la compra (<strong id="cantidad-articulos">0</strong> artículos)</span>
+          <strong id="total-carrito">$0</strong>
+        </div>
+        <button id="btn-finalizar" class="boton-finalizar" type="button">FINALIZAR COMPRA →</button>
+      </div>
+    </section>
+  </main>
+
+  <footer><strong>ROBLE CARPINTERÍA</strong><span>La madera tiene historia. Nosotros le damos forma.</span></footer>
+  <div id="notificacion" class="notificacion" role="status"></div>
+</body>
+</html>
